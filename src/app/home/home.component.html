@@ -1,1 +1,4 @@
 <h1>Home Page</h1>
+<p *ngFor="let item of todos$ | async">{{item.title}}</p>
+<button (click)="addTodo()">Add Item</button><br>
+<button (click)="add('TranDung')">Add Item</button>
